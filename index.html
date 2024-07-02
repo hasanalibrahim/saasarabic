@@ -1,0 +1,64 @@
+<!DOCT<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas/dist/html2canvas.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="container birthday-container">
+            <!-- محتوياتك هنا -->
+        
+
+        <img src=" https://storage.googleapis.com/msgsndr/vNPzjpCPEbW726SW5VI1/media/66823c133f34231da76b0760.png" alt="Logo" class="logo">
+        
+        <h1>QR Code Generator</h1>
+        <div class="input-group">
+            <input type="text" id="data" placeholder="Enter data" />
+        </div>
+        <div class="input-group">
+            <label for="color">QR Code Color:</label>
+            <input type="color" id="color" value="#000000" />
+        </div>
+        <div class="input-group">
+            <input type="file" id="logoInput" accept="image/*" />
+        </div>
+        <button class="btn" onclick="generateQRCode()">Generate QR Code</button>
+        <div id="qrcode">
+            <canvas id="qrCanvas"></canvas>
+        </div>
+        <button class="btn" onclick="saveQRCode()">Save QR Code</button>
+    </div>
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Widget</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="chat-icon" onclick="toggleChatBox()">💬</div>
+<div class="chat-box" id="chatBox">
+    <iframe src="https://saasarabic.com/"></iframe>
+</div>
+
+<script>
+    function toggleChatBox() {
+        const chatBox = document.getElementById('chatBox');
+        chatBox.style.display = chatBox.style.display === 'none' ? 'block' : 'none';
+    }
+</script>
+
+</body>
+</html>

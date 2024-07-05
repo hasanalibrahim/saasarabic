@@ -6,7 +6,7 @@ function generateQRCode() {
     const logoInput = document.getElementById('logoInput');
 
     
-    const size = 450;
+    const size = 350;
     canvas.width = size;
     canvas.height = size;
 
